@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public float jumpH = 0.04f;
+    public float jumpH = 0.17f;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,12 +14,12 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(Camera.main.ScreenToWorldPoint((Vector2)Input.mousePosition).y);
+        
     }
 
     void FixedUpdate()
     {
-        if (Input.GetKey(KeyCode.Mouse0)) //jump
+        if (Input.GetKey(KeyCode.Mouse0)) //move up or down based on mouse position above or below middle
         {
             if (Camera.main.ScreenToWorldPoint((Vector2)Input.mousePosition).y > 0)
             {
@@ -32,11 +32,19 @@ public class Player : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D coll)
+    private void OnCollisionEnter2D(Collision2D coll) 
     {
-        if (coll.gameObject.tag == "Ow")
+        if (coll.gameObject.tag == "Ow") //colliding with walls
         {
-            Debug.Log("coll with" + coll);
+            Debug.Log("coll with " + coll.gameObject.name);
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D coll)
+    {
+        if (coll.gameObject.tag == "Ow") //colliding with enemies
+        {
+            Debug.Log("coll with " + coll.gameObject.name); //death / retart function can go here
         }
     }
 }
