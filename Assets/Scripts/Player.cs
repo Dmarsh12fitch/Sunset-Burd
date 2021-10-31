@@ -5,21 +5,16 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public float jumpH = 0.17f;
-    // Start is called before the first frame update
-    void Start()
-    {
-     
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    public bool isDead;
+
+    public GameObject restartButton;
+
+    public GameObject youWonText;
 
     void FixedUpdate()
     {
-        if (Input.GetKey(KeyCode.Mouse0)) //move up or down based on mouse position above or below middle
+        if (Input.GetKey(KeyCode.Mouse0) && !isDead) //move up or down based on mouse position above or below middle
         {
             if (Camera.main.ScreenToWorldPoint((Vector2)Input.mousePosition).y > 0)
             {
@@ -44,7 +39,9 @@ public class Player : MonoBehaviour
     {
         if (coll.gameObject.tag == "Ow") //colliding with enemies
         {
-            Debug.Log("coll with " + coll.gameObject.name); //death / retart function can go here
+            isDead = true;
+            restartButton.gameObject.SetActive(true);
+            //Debug.Log("coll with " + coll.gameObject.name); //death / retart function can go here
         }
     }
 }
