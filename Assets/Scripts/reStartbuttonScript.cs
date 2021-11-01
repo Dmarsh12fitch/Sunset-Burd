@@ -15,7 +15,7 @@ public class reStartbuttonScript : MonoBehaviour
     IEnumerator restartDelay()
     {
         yield return new WaitForSeconds(0.5f);
-        SceneManager.LoadScene(0);    //this must change in the future
+        SceneManager.LoadScene(0);
     }
 
 
