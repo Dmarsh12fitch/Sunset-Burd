@@ -1614,6 +1614,7 @@ MonoBehaviour:
   windBurst: 0
   restartButton: {fileID: 1044984031}
   youWonText: {fileID: 1212254273}
+  animator: {fileID: 0}
 --- !u!212 &1229299581
 SpriteRenderer:
   m_ObjectHideFlags: 0

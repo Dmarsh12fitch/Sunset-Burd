@@ -18,6 +18,12 @@ public class Player : MonoBehaviour
 
     public GameObject youWonText;
 
+    public Animator animator;
+
+    void Start()
+    {
+        animator = this.GetComponent<Animator>();
+    }
     void FixedUpdate()
     {
         if (Input.GetKey(KeyCode.Mouse0) && !isDead) //move up or down based on mouse position above or below middle
@@ -25,20 +31,26 @@ public class Player : MonoBehaviour
             if (Camera.main.ScreenToWorldPoint((Vector2)Input.mousePosition).y > 0)
             {
                 this.transform.position = new Vector2(this.transform.position.x, this.transform.position.y + (jumpH / 3));
+                animator.SetBool("Flapping", true);
             }
             else
             {
                 if (!windBurst) { this.transform.position = new Vector2(this.transform.position.x, this.transform.position.y - jumpH); }
                 if (timer > 20) { windBurst = false; } //if you collide with gust when holding down you can break out of it after a short delay
+                animator.SetBool("Flapping", false);
+                transform.rotation = Quaternion.Euler(0, 0, -10);
             }
         }
         if (!Input.GetKey(KeyCode.Mouse0))
         {
             this.transform.position = new Vector2(this.transform.position.x, this.transform.position.y - fallSpeed);
+            animator.SetBool("Flapping", false);
+            transform.rotation = Quaternion.Euler(0, 0, 0);
         }
 
         if (windBurst)                                // windburst logic
         {
+            transform.rotation = Quaternion.Euler(0, 0, 10); //point up if windburst
             this.transform.position = new Vector2(this.transform.position.x, this.transform.position.y + jumpH);
             timer += 1;
             if (timer > 100)
