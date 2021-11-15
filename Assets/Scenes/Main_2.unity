@@ -540,12 +540,28 @@ PrefabInstance:
       value: background_And_Sun_System
       objectReference: {fileID: 0}
     - target: {fileID: 4105778940537208091, guid: b675b5838a586c04bac4a88c2902fbcd, type: 3}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4105778940537208091, guid: b675b5838a586c04bac4a88c2902fbcd, type: 3}
+      propertyPath: m_Color.g
+      value: 0.5613208
+      objectReference: {fileID: 0}
+    - target: {fileID: 4105778940537208091, guid: b675b5838a586c04bac4a88c2902fbcd, type: 3}
+      propertyPath: m_Color.r
+      value: 0.7409832
+      objectReference: {fileID: 0}
+    - target: {fileID: 4105778940537208091, guid: b675b5838a586c04bac4a88c2902fbcd, type: 3}
       propertyPath: m_SortingOrder
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 4105778940547359165, guid: b675b5838a586c04bac4a88c2902fbcd, type: 3}
+      propertyPath: TrailModule.widthOverTrail.scalar
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 4105778940547359167, guid: b675b5838a586c04bac4a88c2902fbcd, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4105778940756699897, guid: b675b5838a586c04bac4a88c2902fbcd, type: 3}
       propertyPath: m_IsActive
