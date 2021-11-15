@@ -15,6 +15,8 @@ public class Player : MonoBehaviour
     public bool windBurst = false;
 
     public GameObject restartButton;
+    public GameObject ReadySign;
+    public GameObject GoSign;
 
     public GameObject youWonText;
 
@@ -23,6 +25,7 @@ public class Player : MonoBehaviour
     void Start()
     {
         animator = this.GetComponent<Animator>();
+        StartCoroutine(readyGo(false, true));
     }
     void FixedUpdate()
     {
@@ -85,4 +88,17 @@ public class Player : MonoBehaviour
             windBurst = true;
         }
     }
+
+
+    IEnumerator readyGo(bool ready, bool go)
+    {
+        yield return new WaitForSeconds(1.5f);
+        ReadySign.gameObject.SetActive(ready);
+        GoSign.gameObject.SetActive(go);
+        if (go)
+        {
+            StartCoroutine(readyGo(false, false));
+        }
+    }
+
 }
