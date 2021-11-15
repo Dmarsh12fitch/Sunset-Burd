@@ -32,6 +32,7 @@ public class Player : MonoBehaviour
             {
                 this.transform.position = new Vector2(this.transform.position.x, this.transform.position.y + (jumpH / 3));
                 animator.SetBool("Flapping", true);
+                transform.rotation = Quaternion.Euler(0, 0, 0);
             }
             else
             {
