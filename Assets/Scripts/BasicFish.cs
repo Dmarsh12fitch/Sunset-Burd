@@ -36,6 +36,9 @@ public class BasicFish : MonoBehaviour
     public IEnumerator jumptiming()
     {
         yield return new WaitForSeconds(Random.Range(jMin, jMax)); //rng jump timing
+        this.transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>().color = new Color(0, 0, 0, 0.6f);
+        yield return new WaitForSeconds(0.4f);
+        Destroy(this.transform.GetChild(0).gameObject);
         rb.gravityScale = 1;
         rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y + Random.Range(jumpHMin, jumpHMax)); //rng jump height
     }

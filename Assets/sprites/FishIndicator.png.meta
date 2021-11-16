@@ -1,13 +1,16 @@
 fileFormatVersion: 2
-guid: 3ff3a85ae8cc3e749af637712d0ad36c
+guid: f664f43df311871418fb7b5b940337f3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1927615641949163186
-    second: ReadyGo_0
+      213: -2512050627192442331
+    second: FishIndicator_0
   - first:
-      213: 810570755630863511
-    second: ReadyGo_1
+      213: 1154634882189545801
+    second: FishIndicator_1
+  - first:
+      213: 3539986268859598242
+    second: FishIndicator_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -94,7 +97,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: iPhone
+    buildTarget: Windows Store Apps
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -117,41 +120,17 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ReadyGo_0
+      name: FishIndicator_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 88
-        width: 256
-        height: 88
+        y: 16
+        width: 20
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,20 +138,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2becdd1a63440ca10800000000000000
-      internalID: 1927615641949163186
+      spriteID: 522b5649347632dd0800000000000000
+      internalID: -2512050627192442331
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ReadyGo_1
+      name: FishIndicator_1
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 256
-        height: 88
+        y: 8
+        width: 20
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -180,8 +159,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79492b2cec9bf3b00800000000000000
-      internalID: 810570755630863511
+      spriteID: 941de2ece46160010800000000000000
+      internalID: 1154634882189545801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FishIndicator_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 20
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a5032181ce802130800000000000000
+      internalID: 3539986268859598242
       vertices: []
       indices: 
       edges: []

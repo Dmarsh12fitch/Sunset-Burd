@@ -1,13 +1,19 @@
 fileFormatVersion: 2
-guid: 3ff3a85ae8cc3e749af637712d0ad36c
+guid: 1c6a37805ac10e44196c132acdcbb224
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1927615641949163186
-    second: ReadyGo_0
+      213: -2734401861447989385
+    second: FishySheet_0
   - first:
-      213: 810570755630863511
-    second: ReadyGo_1
+      213: 6854723494349718882
+    second: FishySheet_1
+  - first:
+      213: 2867965755277110508
+    second: FishySheet_2
+  - first:
+      213: 6197044911514308554
+    second: FishySheet_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -94,7 +100,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: iPhone
+    buildTarget: Windows Store Apps
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -117,41 +123,17 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ReadyGo_0
+      name: FishySheet_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 88
-        width: 256
-        height: 88
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,20 +141,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2becdd1a63440ca10800000000000000
-      internalID: 1927615641949163186
+      spriteID: 777c9379ef37d0ad0800000000000000
+      internalID: -2734401861447989385
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ReadyGo_1
+      name: FishySheet_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 256
-        height: 88
+        x: 16
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -180,8 +162,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79492b2cec9bf3b00800000000000000
-      internalID: 810570755630863511
+      spriteID: 2654d3243bed02f50800000000000000
+      internalID: 6854723494349718882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FishySheet_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cece647c8af0dc720800000000000000
+      internalID: 2867965755277110508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FishySheet_3
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acfc3ff7383500650800000000000000
+      internalID: 6197044911514308554
       vertices: []
       indices: 
       edges: []
