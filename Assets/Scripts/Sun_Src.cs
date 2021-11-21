@@ -7,6 +7,7 @@ public class Sun_Src : MonoBehaviour
 
     //set Sunlight "Alpha Blend on Overlap" to TRUE for right before dusk.
     private float sunDownAmountFromOrigin = 1;
+    public float speed;
 
     private Player playerScript;
 
@@ -19,7 +20,7 @@ public class Sun_Src : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        sunDownAmountFromOrigin -= Time.deltaTime / 5;      //sets increment for sun to go down by
+        sunDownAmountFromOrigin -= Time.deltaTime / speed;      //sets increment for sun to go down by
         if (transform.localPosition.y >= -4)
         {
             transform.localPosition = new Vector3(0, sunDownAmountFromOrigin, 0);       //makes sun go down

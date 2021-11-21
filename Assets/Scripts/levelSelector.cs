@@ -45,10 +45,7 @@ public class levelSelector : MonoBehaviour
 
     public void selectThisLevel(int level)
     {
-        if (levelsUnlocked[level - 1] == 1)
-        {
             SceneManager.LoadScene(level);
-        }
     }
 
     private void OnLevelWasLoaded()
