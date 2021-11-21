@@ -9,6 +9,7 @@ TagManager:
   - screenEnter
   - screenExit
   - Gust
+  - Main
   layers:
   - Default
   - TransparentFX
