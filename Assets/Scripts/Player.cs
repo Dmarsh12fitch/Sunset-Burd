@@ -19,6 +19,7 @@ public class Player : MonoBehaviour
     public GameObject GoSign;
     public GameObject YouLose;
     public GameObject youWonText;
+    public AudioSource gustA;
 
 
     public Animator animator;
@@ -92,6 +93,7 @@ public class Player : MonoBehaviour
         if (coll.gameObject.tag == "Gust") //colliding with wind gust
         {
             windBurst = true;
+            gustA.Play();
         }
     }
 
