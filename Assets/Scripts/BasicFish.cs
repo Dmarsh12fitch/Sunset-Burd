@@ -13,12 +13,7 @@ public class BasicFish : MonoBehaviour
     void Start()
     {
         rb = this.GetComponent<Rigidbody2D>();
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        gameObject.GetComponent<SpriteRenderer>().enabled = false;
     }
 
     void OnTriggerEnter2D(Collider2D coll)
@@ -39,6 +34,7 @@ public class BasicFish : MonoBehaviour
         this.transform.GetChild(0).gameObject.GetComponent<SpriteRenderer>().color = new Color(0, 0, 0, 0.6f);
         yield return new WaitForSeconds(0.4f);
         Destroy(this.transform.GetChild(0).gameObject);
+        gameObject.GetComponent<SpriteRenderer>().enabled = true;
         rb.gravityScale = 1;
         rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y + Random.Range(jumpHMin, jumpHMax)); //rng jump height
     }

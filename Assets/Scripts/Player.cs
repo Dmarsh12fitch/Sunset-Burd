@@ -17,8 +17,9 @@ public class Player : MonoBehaviour
     public GameObject restartButton;
     public GameObject ReadySign;
     public GameObject GoSign;
-
+    public GameObject YouLose;
     public GameObject youWonText;
+
 
     public Animator animator;
 
@@ -45,7 +46,7 @@ public class Player : MonoBehaviour
                 transform.rotation = Quaternion.Euler(0, 0, -10);
             }
         }
-        if (!Input.GetKey(KeyCode.Mouse0))
+        if (!Input.GetKey(KeyCode.Mouse0) && !isDead)
         {
             this.transform.position = new Vector2(this.transform.position.x, this.transform.position.y - fallSpeed);
             animator.SetBool("Flapping", false);
@@ -64,6 +65,10 @@ public class Player : MonoBehaviour
                 Debug.Log("windburst expired");
             }
         }
+        if (isDead)
+        {
+            Destroy(gameObject, 0.5f);
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D coll) 
@@ -80,6 +85,7 @@ public class Player : MonoBehaviour
         {
             isDead = true;
             restartButton.gameObject.SetActive(true);
+            YouLose.gameObject.SetActive(true);
                                                           //death / retart function can go here
         }
 

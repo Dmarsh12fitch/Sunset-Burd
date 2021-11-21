@@ -12,7 +12,7 @@ public class reStartbuttonScript : MonoBehaviour
 
     public void restartLevel()
     {
-        StartCoroutine(restartDelay());
+            StartCoroutine(restartDelay());
     }
 
     IEnumerator restartDelay()
