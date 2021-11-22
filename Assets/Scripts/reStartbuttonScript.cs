@@ -20,7 +20,10 @@ public class reStartbuttonScript : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         if(returnToMenu)
         {
-            levelSelector.Singleton.levelsUnlocked[level] = 1;
+            if(level != 9)
+            {
+                levelSelector.Singleton.levelsUnlocked[level] = 1;
+            }
             SceneManager.LoadScene(0);
         } else
         {

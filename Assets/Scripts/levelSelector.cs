@@ -66,7 +66,6 @@ public class levelSelector : MonoBehaviour
 
     public void RefreshScene()
     {
-        Debug.Log("yea");
 
         if (firstTimeDone)
         {
