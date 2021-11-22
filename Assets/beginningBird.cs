@@ -43,7 +43,7 @@ public class beginningBird : MonoBehaviour
         if (!alreadyDone && GameObject.Find("Main_Menu_Canvas") != null)
         {
             alreadyDone = true;
-            yield return new WaitForSeconds(0.2f);
+            yield return new WaitForSeconds(2.0f);
             int counter = 0;
             foreach(Image i in levelSelector.Singleton.levelDisplays)
             {

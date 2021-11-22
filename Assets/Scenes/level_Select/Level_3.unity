@@ -309,6 +309,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6139298475871690663, guid: 7841a8a9fd0d0604bbdcf327a0463d71, type: 3}
   m_PrefabInstance: {fileID: 95432111}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &131022741 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4778027768559907121, guid: b675b5838a586c04bac4a88c2902fbcd, type: 3}
+  m_PrefabInstance: {fileID: 432985021}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &179817660
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2347,11 +2352,11 @@ MonoBehaviour:
   fallSpeed: 0.01
   isDead: 0
   windBurst: 0
-  restartButton: {fileID: 0}
-  ReadySign: {fileID: 0}
-  GoSign: {fileID: 0}
-  YouLose: {fileID: 0}
-  youWonText: {fileID: 0}
+  restartButton: {fileID: 1768043460}
+  ReadySign: {fileID: 385540699}
+  GoSign: {fileID: 1926197911}
+  YouLose: {fileID: 1702271215}
+  youWonText: {fileID: 131022741}
   gustA: {fileID: 1473312419}
   animator: {fileID: 0}
 --- !u!212 &1473312424
@@ -2540,6 +2545,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1702271215}
   m_CullTransparentMesh: 1
+--- !u!1 &1768043460 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4105778940756699897, guid: b675b5838a586c04bac4a88c2902fbcd, type: 3}
+  m_PrefabInstance: {fileID: 432985021}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1779742031
 GameObject:
   m_ObjectHideFlags: 0

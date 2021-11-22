@@ -68,7 +68,8 @@ public class Player : MonoBehaviour
         }
         if (isDead)
         {
-            Destroy(gameObject, 0.5f);
+            Destroy(animator);
+            Destroy(gameObject.GetComponent<SpriteRenderer>());
         }
     }
 

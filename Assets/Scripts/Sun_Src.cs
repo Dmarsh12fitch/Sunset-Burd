@@ -24,7 +24,7 @@ public class Sun_Src : MonoBehaviour
         if (transform.localPosition.y >= -4)
         {
             transform.localPosition = new Vector3(0, sunDownAmountFromOrigin, 0);       //makes sun go down
-        } else
+        } else if(!playerScript.isDead)
         {
             playerScript.isDead = true;         //stops player from moving
             playerScript.youWonText.gameObject.SetActive(true);
